@@ -95,7 +95,7 @@ function functionOfGo () {
     guessInputElem.focus()
     guessCount++;
     let guessesContainer = guessGame(); //i previously put this line in the next if statement and that prevented the code...Ijust fixed it rn and i am so happy//21:39, 16/09/2024
-    if (guessCount < playerInfo.guhuju) {
+    if (guessCount <= playerInfo.guhuju) {
         if (guessesContainer[guessesContainer.length - 1].dead === 4){
             console.log('You Win!');
             goButtonElem.disabled = true;
