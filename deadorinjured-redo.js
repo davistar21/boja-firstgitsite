@@ -135,7 +135,7 @@ goButtonElem.disabled = true;
 guessInputElem.addEventListener('input', (e) => {
     const distinctSet = new Set(e.target.value)
 
-    if(e.target.value.length === 4 && !gameOver && distinctSet.size == 4) {
+    if(e.target.value.length === 4 && !gameOver && distinctSet.size === 4) {
         goButtonElem.disabled = false;
         
     } else {
